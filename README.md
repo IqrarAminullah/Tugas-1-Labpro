@@ -2,7 +2,7 @@
 Tugas 1 untuk seleksi asisten labpro
 Dibuat oleh Iqrar Aminullah 13516126
 
-##Bab 1 - Percabangan
+**Bab 1 - Percabangan**
 
 Tuan Vin sedang belajar tentang trigonometri. Dia tahu bahwa nilai sin suatu sudut tergantung kuadrannya, dimana pada kuadran 1 sin(a) = sin(a), kuadran 2 sin(180-a) = sin(a), kuadran 3 sin(180+a) = -sin(a), kuadran 4 sin(360-a) = -sin(a). Tuan Vin menantang Anda untuk membuat kalkulator untuk mempermudah perhitungan sin dengan mengubah sudutnya menjadi antara 0 sampai 90. Dapatkah Anda menjawab tantangan Tuan Vin? (0 dan 90 dihitung kuadran 1, 180 dihitung kuadran 2, 270 dihitung kuadran 3 dan 360 dihitung kuadran 4. Nilai sudut selalu di antara 0 hingga 360).
 
@@ -22,14 +22,16 @@ Masukan nilai sudut: **270**
 sin(270) = -sin(90)
 ***
 
-###Solusi
+**Solusi**
+
 Kasus - kasus yang mungkin terjadi berdasarkan input a adalah
  - Inputan berada dalam kuadran 1 ( Bernilai >0 dan <= 90 ) -> Sin(a) = Sin(x) sehingga x = a
  - Inputan berada dalam kuadran 2 ( Bernilai >90 dan <= 180 ) -> Sin(a) = Sin(180-x) sehingga x = 180-a 
  - Inputan berada dalam kuadran 3 ( Bernilai >180 dan <= 270 ) -> -Sin(a) = Sin(180+x) sehingga x = a-180
  - Inputan berada dalam kuadran 4 ( Bernilai >270 dan <= 360 ) -> -Sin(a) = Sin(360-x) sehingga x = 360-a
 
-####Solusi program dalam bahasa Pascal
+**Solusi program dalam bahasa Pascal**
+
 Program Trigonometri;
 
 var
@@ -57,7 +59,7 @@ begin
     end;
 end.
 
-##Bab 2 - Pengulangan
+**Bab 2 - Pengulangan**
 
 Seorang mahasiswa mengklasifikasikan sebuah bilangan menjadi 3 kategori, yaitu **bilangan A**, **bilangan B**, dan **bilangan C**. 
 - **Bilangan A** adalah bilangan yang seluruh faktornya kurang dari nilai bilangan tersebut.
@@ -99,14 +101,16 @@ Tipe bilangan C pada rentang 1 sampai 10 adalah
 Tidak ada
 ```
 
-###Solusi
+**Solusi**
+
 Untuk menyelesaikan persoalan ini, akan mudah dikerjakan dengan pengulangan traversal.
 Dalam pengulangan, untuk setiap bilangan di antara X dan Y, dihitung jumlah dari faktor - faktornya.
 Apabila dicari biangan tipe A, maka dicari bilangan I yang jumlah dari faktor - faktornya < I. 
 Apabila dicari biangan tipe B, maka dicari bilangan I yang jumlah dari faktor - faktornya = I.
 Apabila dicari biangan tipe C, maka dicari bilangan I yang jumlah dari faktor - faktornya > I.
 
-###Solusi program dalam bahasa pascal
+**Solusi program dalam bahasa pascal**
+
 Program FactorType;
 
 var
@@ -173,7 +177,7 @@ begin
 end.
 
 
-##Bab 3 - Fungsi dan Prosedur
+**Bab 3 - Fungsi dan Prosedur**
 
 Saat sedang mengerjakan PR kalkulus, seorang mahasiswa mendapatkan soal berikut.
 
@@ -206,7 +210,8 @@ Tidak ada x yang sesuai
 
 Anda diwajibkan membuat fungsi f(x) untuk nilainya dicocokan dengan masukan.
 
-###Solusi
+**olusi**
+
 Untuk menyelesaikan persoalan ini diperlukan dua fungsi.
 Fungsi yang pertama adalah untuk menghitung a^x untuk digunakan di f(x).
 Fungsi yang kedua adalah untuk menghitung f(x).
@@ -214,7 +219,7 @@ Pada program utama, setelah pembacaan input, dilakukan pengulangan untuk menghit
 Pengulangan dilakukan selama f(x) belum ditemukan  dan x<=30
 Jika ditemukan f(x) yang nilainya sama dengan input, maka pengulangan dihentikan dan program akan mencetakan nilai x.
 
-###Solusi dalam bahasa Pascal
+**Solusi program dalam bahasa Pascal**
 Program Fx;
 
 var
@@ -261,7 +266,7 @@ begin
 	end;
 end.
 
-##Bab 4 - Array
+**Bab 4 - Array**
 
 Lucio diminta oleh orangtuanya untuk menduplikat kunci kamar hotel yang tidak ada cadangannya. Setiap kunci, memiliki nomor yang menandakan nomor kamar. Buatlah program untuk menentukan mana saja kunci yang harus diduplikat oleh Lucio
 
@@ -297,13 +302,15 @@ Kunci yang harus diduplikat :
 202
 ***
 
-###Solusi
+**Solusi**
+
 Pada permasalahan ini, digunakan array untuk menyimpan daftar kunci yang tersedia
 Setelah membaca inputan jumlah kunci yang ada beserta nomor kuncinya, akan dilakukan perhitungan jumlah kunci.
 Untuk setiap elemen dari array, akan dihitung ada berapa jumlah elemen array yang bernilai sama dengan elemen tersebu.t.
 Jika jumlah yang sama adalah 1, maka kunci tersebut harus diduplikat.
 
-###Solusi dalam bahasa pascal
+**Solusi program dalam bahasa Pascal**
+
 Program Duplicate;
 
 var
@@ -348,7 +355,7 @@ begin
 end.
 
 
-##Bab 5 - File Eksternal
+**Bab 5 - File Eksternal**
 
 Krasti Krab telah semakin maju. Kini, telah ada `N` kasir yang dapat melayani penjualan. Masing-masing kasir memiliki slot antrian sepanjang `M`. Tuan Krab ingin mengetahui panjang antrian yang paling panjang di antara semua kasir yang ada. Dia meminta bantuan Anda untuk memecahkan masalah tersebut.
 
@@ -376,14 +383,15 @@ Antrian terpanjang adalah 3
 
 -----------------------------------
 
-###Solusi
+**Solusi**
 Untuk menyelesaikan permasalahan ini, program harus dapat membaca file eksternal.
 Program akan melakukan pembacaan pada baris pertama, kemudian mencatat nilai N dan M.
 Kemudian dilakukan pemeriksaan data antrian dengan menggunakan pengulangan secara traversal.
 Untuk setiap antrian, dihitung panjang dari antrian tersebut. Catat panjang antrian apabila antrian lebih banjang dari antrian - antrian sebelumnya.
 Program kemudian mengembalikan panjang antrian terpanjang.
 
-###Solusi dalam bahasa pascal
+**Solusi program dalam bahasa Pascal**
+
 Program LongestQueue;
 
 var
