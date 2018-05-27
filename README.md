@@ -35,9 +35,11 @@ Kasus - kasus yang mungkin terjadi berdasarkan input a adalah
 Program Trigonometri;
 
 var
+
 	a,x : Integer;
 
 begin
+
     write('Masukkan nilai sudut: '); {Membaca Input}
     readln(a);
     if( 0 <= a ) and ( a <= 90 ) then {A di kuadran 1}
@@ -57,6 +59,7 @@ begin
         x := 360-a;
         writeln( 'sin(', a ,')',' = -sin(', x ,')' );
     end;
+
 end.
 
 **Bab 2 - Pengulangan**
@@ -114,17 +117,21 @@ Apabila dicari biangan tipe C, maka dicari bilangan I yang jumlah dari faktor - 
 Program FactorType;
 
 var
+
 	i, x, y : Integer;
 	numType : Char;
     numExist : Boolean;
 
-
 function sumFactors( x : integer) : integer;
 {I.S. X terdefinisi
 F.S. mengembalikan jumlah faktor -faktor dari X}
+
 var
+
     sum, i : integer;
+
 begin
+
     sum := 0;
     for i:=1 to x-1 do
     begin
@@ -134,9 +141,11 @@ begin
         end;
     end;
     sumFactors := sum;
+
 end;
 
 begin
+
 	write( 'Masukkan X :' ); {Membaca Input}
     readln( x );
     write( 'Masukkan Y :' );
@@ -174,6 +183,7 @@ begin
     begin
         writeln('Tidak ada');
     end;
+
 end.
 
 
@@ -230,23 +240,31 @@ function power( x , a : Integer ) : Integer;
 {I.S. : x dan a terdefinisi
 F.S. : mengembalikan x^a}
 var
+
 	i : Integer;
+
 begin
+
 	power := 1;
 	for i := 1 to a do
 	begin
 		power := power * x;
 	end;
+
 end;
 
 function f( x : integer ) : integer;
 {I.S. : x terdefinisi
 F.S. mengembalikan f(x) = 2x^5 + 3x^4 + 9x^3 − x^2 + 3x − 2}
+
 begin
+
 	f := 2 * power(x, 5) + 3 * power(x, 4) + 9 * power(x, 3) - power(x, 2) + 3 * x - 2;
+
 end;
 
 begin
+
 	i := 1; {Inisialisasi}
 	found := false;
 	write( 'Masukkan f(x) :'); {Membaca Input} 
@@ -264,6 +282,7 @@ begin
 	begin
 		writeln( 'Tidak ada x yang sesuai' );
 	end;
+
 end.
 
 **Bab 4 - Array**
@@ -314,15 +333,20 @@ Jika jumlah yang sama adalah 1, maka kunci tersebut harus diduplikat.
 Program Duplicate;
 
 var
+
 	keys			: array[1..30] of Integer;
 	i, n, neff		: Integer;
 
 function count( x : integer; arr : array of integer) : Integer;
 {I.S. x dan arr terdefinisi, dimana arr adalah sebuah array of integer
 F.S. Mengembalikan jumlah x dalam array}
+
 var
+
 	i 	: Integer;
+
 begin
+
 	count := 0;
 	for i := 1 to neff do
 	begin
@@ -331,10 +355,11 @@ begin
 			count := count + 1;
 		end;
 	end;
+
 end;
 
-
 begin
+
 	neff := 0; {Inisialisasi}
 	write( 'Masukkan jumlah kunci yang ada : '); {membaca input}
 	readln( n );
@@ -352,6 +377,7 @@ begin
 			writeln( keys[i] );
 		end;
 	end;
+
 end.
 
 
@@ -395,12 +421,13 @@ Program kemudian mengembalikan panjang antrian terpanjang.
 Program LongestQueue;
 
 var
+
 	queue			: file of Char;
 	i, j , maxLength, nQueue, queueLength, maxQueue : Integer;
 	N, M, status : char;
 	
-
 begin
+
 	maxQueue := 0; {Inisialisasi}
 	assign( queue, 'Queue.txt'); {Memulai pembacaan file}
 	reset( queue );
@@ -428,8 +455,8 @@ begin
 	end;
 	writeln( 'Antrian terpanjang adalah ', maxQueue);
 	close( queue ) {Menutup pembacaan file}
-end.
 
+end.
 
 -------
 13516126 - Iqrar Aminullah
