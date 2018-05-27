@@ -2,7 +2,7 @@
 Tugas 1 untuk seleksi asisten labpro
 Dibuat oleh Iqrar Aminullah 13516126
 
-# Bab 1 - Percabangan
+## Bab 1 - Percabangan
 
 Tuan Vin sedang belajar tentang trigonometri. Dia tahu bahwa nilai sin suatu sudut tergantung kuadrannya, dimana pada kuadran 1 sin(a) = sin(a), kuadran 2 sin(180-a) = sin(a), kuadran 3 sin(180+a) = -sin(a), kuadran 4 sin(360-a) = -sin(a). Tuan Vin menantang Anda untuk membuat kalkulator untuk mempermudah perhitungan sin dengan mengubah sudutnya menjadi antara 0 sampai 90. Dapatkah Anda menjawab tantangan Tuan Vin? (0 dan 90 dihitung kuadran 1, 180 dihitung kuadran 2, 270 dihitung kuadran 3 dan 360 dihitung kuadran 4. Nilai sudut selalu di antara 0 hingga 360).
 
@@ -62,7 +62,7 @@ begin
 
 end.
 
-# Bab 2 - Pengulangan
+## Bab 2 - Pengulangan
 
 Seorang mahasiswa mengklasifikasikan sebuah bilangan menjadi 3 kategori, yaitu **bilangan A**, **bilangan B**, dan **bilangan C**. 
 - **Bilangan A** adalah bilangan yang seluruh faktornya kurang dari nilai bilangan tersebut.
@@ -187,7 +187,7 @@ begin
 end.
 
 
-# Bab 3 - Fungsi dan Prosedur
+## Bab 3 - Fungsi dan Prosedur
 
 Saat sedang mengerjakan PR kalkulus, seorang mahasiswa mendapatkan soal berikut.
 
@@ -285,7 +285,7 @@ begin
 
 end.
 
-# Bab 4 - Array
+## Bab 4 - Array
 
 Lucio diminta oleh orangtuanya untuk menduplikat kunci kamar hotel yang tidak ada cadangannya. Setiap kunci, memiliki nomor yang menandakan nomor kamar. Buatlah program untuk menentukan mana saja kunci yang harus diduplikat oleh Lucio
 
@@ -381,7 +381,7 @@ begin
 end.
 
 
-# Bab 5 - File Eksternal 
+## Bab 5 - File Eksternal 
 
 Krasti Krab telah semakin maju. Kini, telah ada `N` kasir yang dapat melayani penjualan. Masing-masing kasir memiliki slot antrian sepanjang `M`. Tuan Krab ingin mengetahui panjang antrian yang paling panjang di antara semua kasir yang ada. Dia meminta bantuan Anda untuk memecahkan masalah tersebut.
 
